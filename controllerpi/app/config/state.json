@@ -83,7 +83,7 @@
                     "wateringSolenoidRelayIndex" : 36,
                     "bedMoistureRange" : [20, 40],
                     "bedNumber" : 1,
-                    "MQTTtopic" : "bed1"
+                    "MQTTtopic" : "bed4"
                 },
                 {
                     "chirpSensorI2CAddress" : "0x31",
@@ -93,7 +93,7 @@
                     "wateringSolenoidRelayIndex" : 37,
                     "bedMoistureRange" : [20, 40],
                     "bedNumber" : 2,
-                    "MQTTtopic" : "bed2"
+                    "MQTTtopic" : "bed5"
                 },
                 {
                     "chirpSensorI2CAddress" : "0x32",
@@ -103,7 +103,7 @@
                     "wateringSolenoidRelayIndex" : 38,
                     "bedMoistureRange" : [20, 40],
                     "bedNumber" : 3,
-                    "MQTTtopic" : "bed3"
+                    "MQTTtopic" : "bed6"
                 },
                 {
                     "chirpSensorI2CAddress" : "0x33",
@@ -113,7 +113,17 @@
                     "wateringSolenoidRelayIndex" : 39,
                     "bedMoistureRange" : [20, 40],
                     "bedNumber" : 4,
-                    "MQTTtopic" : "bed4"
+                    "MQTTtopic" : "bed7"
+                },
+                {
+                    "chirpSensorI2CAddress" : "0x34",
+                    "chirpSensorCalibration" : [200, 500],
+                    "safeModeTimerFrequency" : 20,
+                    "safeModeTimerPeriod" : 20,
+                    "wateringSolenoidRelayIndex" : 39,
+                    "bedMoistureRange" : [20, 40],
+                    "bedNumber" : 4,
+                    "MQTTtopic" : "bed8"
                 }
             ],
             "sideWindows" : [
