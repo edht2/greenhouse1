@@ -49,16 +49,16 @@
             ],
             "topWindows" : [
                 {
-                    "actuatorRelayIndexExtend" : 11,
-                    "actuatorRelayIndexRetract" : 12
+                    "actuatorRelayIndexExtend" : 17,
+                    "actuatorRelayIndexRetract" : 18
                 },
                 {
-                    "actuatorRelayIndexExtend" : 13,
-                    "actuatorRelayIndexRetract" : 14
+                    "actuatorRelayIndexExtend" : 19,
+                    "actuatorRelayIndexRetract" : 20
                 },
                 {
-                    "actuatorRelayIndexExtend" : 15,
-                    "actuatorRelayIndexRetract" : 16
+                    "actuatorRelayIndexExtend" : 21,
+                    "actuatorRelayIndexRetract" : 22
                 }
             ],
 
@@ -118,9 +118,27 @@
             ],
             "sideWindows" : [
                 {
-                    "actuatorRelayIndexExtend" : 21,
-                    "actuatorRelayIndexRetract" : 22
+                    "actuatorRelayIndexExtend" : 7,
+                    "actuatorRelayIndexRetract" : 8
                 },
+                {
+                    "actuatorRelayIndexExtend" : 9,
+                    "actuatorRelayIndexRetract" : 10
+                },
+                {
+                    "actuatorRelayIndexExtend" : 11,
+                    "actuatorRelayIndexRetract" : 12
+                },
+                {
+                    "actuatorRelayIndexExtend" : 13,
+                    "actuatorRelayIndexRetract" : 14
+                },
+                {
+                    "actuatorRelayIndexExtend" : 15,
+                    "actuatorRelayIndexRetract" : 16
+                }
+            ],
+            "topWindows" : [
                 {
                     "actuatorRelayIndexExtend" : 23,
                     "actuatorRelayIndexRetract" : 24
@@ -128,16 +146,6 @@
                 {
                     "actuatorRelayIndexExtend" : 25,
                     "actuatorRelayIndexRetract" : 26
-                },
-                {
-                    "actuatorRelayIndexExtend" : 25,
-                    "actuatorRelayIndexRetract" : 26
-                }
-            ],
-            "topWindows" : [
-                {
-                    "actuatorRelayIndexExtend" : 19,
-                    "actuatorRelayIndexRetract" : 20
                 },
                 {
                     "actuatorRelayIndexExtend" : 27,
