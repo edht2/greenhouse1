@@ -53,8 +53,8 @@ class Actuator:
 		if self.state == "RETRACTED" or self.state == "RETRACTING":
 			return None
 
-		#relay.turn_off_relay_by_index(self.relays[0])
-		print("Retracting actuator on relay", self.relays[0])
+		#relay.turn_on_relay_by_index(self.relays[1])
+		print("Retracting actuator on relay", self.relays[1])
 	
 		self.state = 'RETRACTING'
   
@@ -64,8 +64,8 @@ class Actuator:
     
 		self.state = 'RETRACTED'
   
-		#relay.turn_off_relay_by_index(self.relays[0])
-		print("Retracted actuator on relay", self.relays[0])
+		#relay.turn_off_relay_by_index(self.relays[1])
+		print("Retracted actuator on relay", self.relays[1])
   
 		log('ControllerPi', True, 'controll', 'actuator', 'Retracted actuator on relay', arg=self.relayIndex)
   
