@@ -30,7 +30,8 @@ class Actuator:
 			return None
 
 		#relay.turn_on_relay_by_index(self.relays[0])
-		print("Extending actuator on relay", self.relays[0])
+		#relay.turn_off_relay_by_index(self.relays[1])
+		print("Extending actuator on relays", self.relays[0], " and ", self.relays[1])
 	
 		self.state = 'EXTENDING'
   
@@ -43,7 +44,8 @@ class Actuator:
   		# show that it is extended
   
 		#relay.turn_off_relay_by_index(self.relays[0])
-		print("Extended actuator on relay", self.relays[0])
+		#relay.turn_off_relay_by_index(self.relays[1])
+		print("Extended actuator on relays", self.relays[0]," and ", self.relays[1])
   
 		log('ControllerPi', True, 'controll', 'actuator', 'Extended actuator on relay', arg=self.relayIndex)
 
@@ -52,9 +54,10 @@ class Actuator:
 	def retract(self, asynchronous=True) -> None:
 		if self.state == "RETRACTED" or self.state == "RETRACTING":
 			return None
-
+			
+		#relay.turn_off_relay_by_index(self.relays[0])
 		#relay.turn_on_relay_by_index(self.relays[1])
-		print("Retracting actuator on relay", self.relays[1])
+		print("Retracting actuator on relays", self.relays[0], " and ", self.relays[1])
 	
 		self.state = 'RETRACTING'
   
@@ -63,9 +66,10 @@ class Actuator:
 		time.sleep(self.extension_time)
     
 		self.state = 'RETRACTED'
-  
+
+		#relay.turn_off_relay_by_index(self.relays[0])
 		#relay.turn_off_relay_by_index(self.relays[1])
-		print("Retracted actuator on relay", self.relays[1])
+		print("Retracted actuator on relays", self.relays[0], " and ", self.relays[1])
   
 		log('ControllerPi', True, 'controll', 'actuator', 'Retracted actuator on relay', arg=self.relayIndex)
   
@@ -84,3 +88,4 @@ class Actuator:
 		""" turn off everything, this will stop and movment of the actuator """
 		#relay.turn_off_relay_by_index(self.relays[0])
 		#relay.turn_off_relay_by_index(self.relays[1])
+		print("stopping actuator on relays", self.relays[0], " and ", self.relays[1])
